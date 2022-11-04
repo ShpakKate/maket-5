@@ -1,0 +1,12 @@
+@mixin form-border {
+    border-radius:0px;
+    height: 20px;
+    line-height: 1;
+}
+
+@mixin btn-width {
+    width: 5rem;
+    border-radius: 3px;
+    box-shadow: 1px
+}
+
