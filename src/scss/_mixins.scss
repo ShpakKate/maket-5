@@ -10,3 +10,8 @@
     box-shadow: 1px
 }
 
+@mixin placeholdor-style {
+    color: $text-color-placeholder;
+    font-size: 0.9rem;
+}
+
