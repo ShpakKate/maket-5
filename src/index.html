@@ -4,294 +4,315 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper fs-6 lh-sm">
-
-        <header class="position-relative header-wrapper">
-            <div class="position-absolute logo-bg">
-                <a class="navbar-brand logo-bg" href="#">
-                    <img src="assets/logo.png" alt="logo" width="200" height="57">
+  <div class="wrapper fs-6 lh-sm">
+    <header class="position-relative header-wrapper">
+      <div class="position-absolute logo-bg">
+        <a class="navbar-brand logo-bg" href="#">
+            <img src="assets/logo.png" alt="logo" width="200" height="57">
+        </a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-wrapper">
+        <div class="container-fluid">
+            
+          <button class="navbar-toggler navbar-toggler-style" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon fs-6"></span>
+          </button>
+          <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 ps-5 mb-lg-0 text-nowrap">
+              <li class="nav-item dropdown">
+                <a class="nav-link px-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  User and file managment
                 </a>
+                <ul class="dropdown-menu rounded-0 dropdown-menu-style" aria-labelledby="navbarDropdown">
+                    <li class="dropdown-menu-li-style"><a class="dropdown-item" href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li class="dropdown-menu-li-style"><a class="dropdown-item" href="#">Consectetur adipisicing</a></li>
+                    <li class="dropdown-menu-li-style"><a class="dropdown-item" href="#">Voluptates hic</a></li>
+                    <li class="dropdown-menu-li-style"><a class="dropdown-item" href="#">Sed beatae</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 text-white text-decoration-underline" href="#">User and file managment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 text-white text-decoration-underline" href="#">File managment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 text-white text-decoration-underline" href="#">User managment</a>
+              </li> 
+            </ul>
+            <form class="d-flex" role="search">
+              <label class="text-white me-2 mt-1">Admin Admin</label>
+              <button type="button" class="btn-close" aria-label="Закрыть">
+                <img class="mb-1" src="assets/close.png" alt="close" >
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-md-7 col-sm-12 px-0 section-content">
+          <div class="content pt-5 pb-5">
+
+            <div class="form-content ms-5 mb-4">
+
+              <div class="dropdown dropdown-content-wrapper mb-2">
+                <label class="fw-bold me-2 pt-1">Company:</label>
+                <button type="button" class="btn content-select">Lorem ipsum dolor sit</button>
+                <button type="button" class="btn btn-style dropdown-toggle dropdown-toggle-split" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Переключатель выпадающего списка</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                  <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                  <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown dropdown-content-wrapper mb-2">
+                <label class="fw-bold me-2 pt-1">Company:</label>
+                <button type="button" class="btn content-select">Lorem ipsum dolor sit</button>
+                <button type="button" class="btn btn-style dropdown-toggle dropdown-toggle-split" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Переключатель выпадающего списка</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                  <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                  <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown dropdown-content-wrapper">
+                <label class="fw-bold me-2 pt-1">Company:</label>
+                <button type="button" class="btn content-select">Lorem ipsum dolor sit</button>
+                <button type="button" class="btn btn-style dropdown-toggle dropdown-toggle-split" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Переключатель выпадающего списка</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                  <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                  <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                </ul>
+              </div>
+
             </div>
-            <nav class="navbar navbar-expand-lg navbar-wrapper">
-                <div class="container-fluid">
-                  
-                  <button class="navbar-toggler navbar-toggler-style" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-                    <span class="navbar-toggler-icon fs-6"></span>
+
+            <div class="table-wrapper border-select">
+              <h5 class="table-title fw-bold">
+                Lorem ipsum dolor sit amet
+              </h5>
+              <table class="table table-style table-hover table-bordered border-1">
+                <thead class="text-white">
+                  <tr class="text-nowrap">
+                    <th scope="col" class="green-gradient-style align-middle"> 
+                      <div class="form-check checked-wrapper">
+                          <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked" checked>
+                          <label class="control-label" for="flexCheckChecked"></label>
+                      </div>
+                  </th>
+                  <th scope="col" class="green-gradient-style thead-shadow px-3">#</th>
+                  <th scope="col" class="green-gradient-style text-center">Lorem ipsum</th>
+                  <th scope="col" class="green-gradient-style">Lorem ipsum</th>
+                  <th scope="col" class="green-gradient-style">Ipsum</th>
+                  </tr>
+                </thead>
+                <tbody class="align-middle">
+                  <tr class="tr-hover-color">
+                    <td class="align-middle">
+                      <div class="form-check checked-wrapper">
+                        <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked1" checked>
+                        <label class="control-label" for="flexCheckChecked1"></label>
+                    </div>
+                    </td>
+                    <th scope="row fw-bold" class="px-3">1</th>
+                    <td class="text-center">C1004</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum necessitatibus ab laudantium minima possimus ut culpa nisi, eius iste quibusdam!</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr class="tr-hover-color">
+                    <td class="align-middle">
+                      <div class="form-check checked-wrapper">
+                        <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked2" checked>
+                        <label class="control-label" for="flexCheckChecked2"></label>
+                    </div>
+                    </td>
+                    <th scope="row" class="px-3">2</th>
+                    <td class="text-center">C1004</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum necessitatibus ab laudantium minima possimus ut culpa nisi, eius iste quibusdam!</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr class="tr-hover-color">
+                    <td class="align-middle">
+                      <div class="form-check checked-wrapper">
+                        <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked3" checked>
+                        <label class="control-label" for="flexCheckChecked3"></label>
+                    </div>
+                    </td>
+                    <th scope="row" class="px-3">3</th>
+                    <td class="text-center">C1004</td>
+                    <td>Cum necessitatibus ab laudantium minima possimus ut culpa nisi, eius iste quibusdam!</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr class="tr-hover-color">
+                    <td class="align-middle">
+                      <div class="form-check checked-wrapper">
+                        <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked4" checked>
+                        <label class="control-label" for="flexCheckChecked4"></label>
+                    </div>
+                    </td>
+                    <th scope="row" class="px-3">4</th>
+                    <td class="text-center">C1004</td>
+                    <td>Necessitatibus ab quibusdam!</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr class="tr-hover-color">
+                    <td class="align-middle">
+                      <div class="form-check checked-wrapper">
+                        <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked5" checked>
+                        <label class="control-label" for="flexCheckChecked5"></label>
+                    </div>
+                    </td>
+                    <th scope="row" class="px-3">5</th>
+                    <td class="text-center">C1004</td>
+                    <td>Cum necessitatibus ab laudantium minima possimus ut culpa nisi, eius iste quibusdam!</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr class="tr-hover-color">
+                    <td class="align-middle">
+                      <div class="form-check checked-wrapper">
+                        <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked6" checked>
+                        <label class="control-label" for="flexCheckChecked6"></label>
+                    </div>
+                    </td>
+                    <th scope="row" class="px-3">6</th>
+                    <td class="text-center">C1004</td>
+                    <td>Necessitatibus ab quibusdam!</td>
+                    <td class="text-nowrap">Lorem ipsum</td>
+                  </tr>
+                </tbody>
+              </table>
+  
+              <nav aria-label="Page navigation example" class=" d-flex justify-content-end">
+                <span class="pe-2">Page:</span>
+                  <ul class="pagination m-0">
+                    <li class="page-item">
+                      <a class="btn page-link pagination-button rounded-0" href="#" role="button" aria-label="Previous">
+                        <img src="assets/icon-start.png" width="10" height="10" class="pagination-img" alt="start">
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="btn page-link pagination-button" href="#" role="button" aria-label="Previous">
+                        <img src="assets/icon-previous.png" width="10" height="10" class="pagination-img"  alt="previous">
+                      </a>
+                    </li>
+                    <li class="page-item vert-line"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item vert-line"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item vert-line"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item vert-line"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item">
+                      <a class="btn page-link pagination-button" href="#" role="button" aria-label="Next">
+                        <img src="assets/icon-next.png" width="10" height="10" class="pagination-img"  alt="next">
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="btn page-link pagination-button rounded-0" href="#" role="button" aria-label="End">
+                        <img src="assets/icon-end.png" width="10" height="10" class="pagination-img"  alt="end">
+                      </a>
+                    </li>
+                  </ul>
+              </nav>
+            </div>
+
+            <div class="d-flex gap-2 mt-2 me-5 justify-content-end">
+                <button class="btn btn-sm btn-table btn-red-width me-md-2" type="button">Delete</button>
+                <button class="btn btn-sm btn-table btn-green-width" type="button">New</button>
+            </div>
+
+          </div>
+        </div>
+    
+        <div class="col-md-5 col-sm-12">
+          <div class="aside mt-3 mx-4">
+            <h5 class="aside-title fw-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+            </h5>
+            <div class="alert text-danger p-0 error-text" role="alert">
+              <strong class="text-uppercase">Error!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, velit fuga. Vero hic consectetur aperiam consequuntur accusamus doloribus odio veniam.    
+            </div>
+
+            <form>
+
+              <div class="form-group mb-3">
+                <label class="control-label fw-bold" for="name">Name:</label>
+                <div class="aside-form-info">
+                  <input id="name" name="name" type="text" placeholder="Lorem ipsum dolor sit" class="form-control aside-form-style input-md" required="">
+                </div>
+              </div>
+
+              <div class="form-group mb-3">
+                <label class=" control-label fw-bold" for="company">Company:</label>
+                <div class="aside-form-info">
+                  <input id="company" name="company" type="text" placeholder="Lorem ipsum dolor sit" class="form-control aside-form-style input-md" required="">
+                </div> 
+              </div>
+
+              <div class="form-group mb-3">
+                <div class="dropdown dropdown-adress-wrapper">
+                  <p class="fw-bold mb-0">Adress:</p>
+                  <button type="button" class="btn dropdown-toggle dropdown-adress">Lorem ipsum dolor sit
+                    <button type="button" class="btn btn-style dropdown-toggle dropdown-toggle-split" id="dropdownMenuAdress" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Переключатель выпадающего списка</span>
+                    </button>
                   </button>
-                  <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto mb-2 ps-5 mb-lg-0 text-nowrap">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white text-decoration-underline" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                User and file managment
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit amet</a></li>
-                                <li><a class="dropdown-item" href="#">Consectetur adipisicing</a></li>
-                                <li><a class="dropdown-item" href="#">Voluptates hic</a></li>
-                                <li><a class="dropdown-item" href="#">Sed beatae<t</a></li>
-                                <li><a class="dropdown-item" href="#">Nihil provident</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-white text-decoration-underline" href="#">User and file managment</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-white text-decoration-underline" href="#">File managment</a>
-                          </li>
-                          
-                          <li class="nav-item">
-                            <a class="nav-link text-white text-decoration-underline" href="#">User managment</a>
-                          </li> 
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <label class="text-white me-2 mt-1">Admin Admin</label>
-                      <button type="button" class="btn-close" aria-label="Закрыть">
-                        <img class="mb-1" src="assets/close.png" alt="close" >
-                      </button>
-                    </form>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuAdress">
+                    <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                    <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                    <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
+                  </ul>
+                </div>  
+              </div>
+
+              <div class="form-group mb-3">
+                <span class="control-label fw-bold red-min-symbol" for="date">Date: <span class="required fw-bold"></span></span>
+                <div class="d-flex aside-form-info">
+                  <input class="form-control aside-form-style fs-6 me-1" id="date" name="date" placeholder="04/09/2006" type="text"/>
+                  <a href="#" class="page-link btn-date">
+                    <img class="mb-1" src="assets/date-select.png" alt="date">
+                  </a>
+                </div>
+              </div>
+
+              <div class="mb-3 form-check checked-wrapper-comments">
+                <input class="form-check-input chek-table" type="checkbox" value="" id="exampleCheck" checked>
+                <label class="form-check-label fw-bold control-label" for="exampleCheck">Comments</label>
+              </div>
+  
+              <div class="form-group mb-3">
+                <label class="control-label fw-bold" for="exampleFormControlTextarea1">Notes:</label>
+                <textarea class="form-control mb-2 notes-style" id="exampleFormControlTextarea1" rows="5"></textarea>
+                <div class="d-flex flex-row justify-content-between">
+                  <div>
+                    <span class="text-secondary">Fields marked with <span class="required ms-1"></span> are obligatory</span>
+                  </div>
+                  <div >
+                    <button type="submit" class="btn btn-sm btn-green-width">Send</button>
                   </div>
                 </div>
-            </nav>
-        </header>
+              </div>
+                
+            </form>
 
-        <main class="container-fluid">
-            <div class="row">
-                <div class="col-md-7 col-sm-12 px-0 section-content">
-                    <div class="content pt-5 pb-5">
-
-                        <div class="form-content ms-5 mb-4">
-                          <div class="dropdown">
-                            <label class="fw-bold me-2 pt-1">Company:</label>
-                            <button class="btn dropdown-toggle  content-select" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                              Lorem ipsum dolor sit
-                            </button>
-                          
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
-                              <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
-                              <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
-                            </ul>
-                          </div>  
-                        </div>
-
-                        <div class="table-wrapper border-select">
-                            <h5 class="table-title fw-bold">
-                                Lorem ipsum dolor sit amet
-                            </h5>
-                            <table class="table table-style table-hover table-bordered border-1">
-                                <thead class="text-white">
-                                    <tr class="text-nowrap">
-                                        <th scope="col" class="green-gradient-style align-middle"> 
-                                            <div class="form-check checked-wrapper">
-                                                <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="control-label" for="flexCheckChecked"></label>
-                                            </div>
-                                        </th>
-                                        <th scope="col" class="green-gradient-style thead-shadow px-3">#</th>
-                                        <th scope="col" class="green-gradient-style text-center">Lorem ipsum</th>
-                                        <th scope="col" class="green-gradient-style">Lorem ipsum</th>
-                                        <th scope="col" class="green-gradient-style">Ipsum</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="align-middle">
-                                    <tr class="tr-hover-color">
-                                        <td class="align-middle">
-                                          <div class="form-check checked-wrapper">
-                                            <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked1" checked>
-                                            <label class="control-label" for="flexCheckChecked1"></label>
-                                        </div>
-                                        </td>
-                                        <th scope="row fw-bold" class="px-3">1</th>
-                                        <td class="text-center">C1004</td>
-                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum necessitatibus ab laudantium minima possimus ut culpa nisi, eius iste quibusdam!</td>
-                                        <td>Lorem ipsum</td>
-                                    </tr>
-                                    <tr class="tr-hover-color">
-                                        <td class="align-middle">
-                                          <div class="form-check checked-wrapper">
-                                            <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked2" checked>
-                                            <label class="control-label" for="flexCheckChecked2"></label>
-                                        </div>
-                                        </td>
-                                        <th scope="row" class="px-3">2</th>
-                                        <td class="text-center">C1004</td>
-                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum necessitatibus ab laudantium minima possimus ut culpa nisi, eius iste quibusdam!</td>
-                                        <td>Lorem ipsum</td>
-                                    </tr>
-                                    <tr class="tr-hover-color">
-                                        <td class="align-middle">
-                                          <div class="form-check checked-wrapper">
-                                            <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked3" checked>
-                                            <label class="control-label" for="flexCheckChecked3"></label>
-                                        </div>
-                                        </td>
-                                        <th scope="row" class="px-3">3</th>
-                                        <td class="text-center">C1004</td>
-                                        <td>Cum necessitatibus ab laudantium minima possimus ut culpa nisi, eius iste quibusdam!</td>
-                                        <td>Lorem ipsum</td>
-                                    </tr>
-                                    <tr class="tr-hover-color">
-                                        <td class="align-middle">
-                                          <div class="form-check checked-wrapper">
-                                            <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked4" checked>
-                                            <label class="control-label" for="flexCheckChecked4"></label>
-                                        </div>
-                                        </td>
-                                        <th scope="row" class="px-3">4</th>
-                                        <td class="text-center">C1004</td>
-                                        <td>Necessitatibus ab quibusdam!</td>
-                                        <td>Lorem ipsum</td>
-                                    </tr>
-                                    <tr class="tr-hover-color">
-                                        <td class="align-middle">
-                                          <div class="form-check checked-wrapper">
-                                            <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked5" checked>
-                                            <label class="control-label" for="flexCheckChecked5"></label>
-                                        </div>
-                                        </td>
-                                        <th scope="row" class="px-3">5</th>
-                                        <td class="text-center">C1004</td>
-                                        <td>Cum necessitatibus ab laudantium minima possimus ut culpa nisi, eius iste quibusdam!</td>
-                                        <td>Lorem ipsum</td>
-                                    </tr>
-                                    <tr class="tr-hover-color">
-                                        <td class="align-middle">
-                                          <div class="form-check checked-wrapper">
-                                            <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked6" checked>
-                                            <label class="control-label" for="flexCheckChecked6"></label>
-                                        </div>
-                                        </td>
-                                        <th scope="row" class="px-3">6</th>
-                                        <td class="text-center">C1004</td>
-                                        <td>Necessitatibus ab quibusdam!</td>
-                                        <td class="text-nowrap">Lorem ipsum</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-        
-                            <nav aria-label="Page navigation example" class=" d-flex flex-row justify-content-end">
-                                <span class="pe-2 mt-2">Page:</span>
-                                <ul class="pagination pagination-style">
-                                  <li class="page-item">
-                                    <a class="btn page-link pagination-button" href="#" role="button" aria-label="Previous">
-                                      <img src="assets/icon-start.png" class="" alt="start">
-                                    </a>
-                                  </li>
-                                  <li class="page-item">
-                                    <a class="btn page-link pagination-button" href="#" role="button" aria-label="Previous">
-                                      <img src="assets/icon-previous.png" alt="previous">
-                                    </a>
-                                  </li>
-                                  <li class="page-item vert-line"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item vert-line"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item vert-line"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                  <li class="page-item">
-                                    <a class="btn page-link pagination-button" href="#" role="button" aria-label="Next">
-                                      <img src="assets/icon-next.png" alt="next">
-                                    </a>
-                                  </li>
-                                  <li class="page-item">
-                                    <a class="btn page-link pagination-button" href="#" role="button" aria-label="End">
-                                      <img src="assets/icon-end.png" alt="end">
-                                    </a>
-                                  </li>
-                                </ul>
-                              </nav>
-                        </div>
-        
-                        <div class="d-flex gap-2 mt-2 me-5 justify-content-end">
-                            <button class="btn btn-sm btn-table btn-red-width me-md-2" type="button">Delete</button>
-                            <button class="btn btn-sm btn-table btn-green-width" type="button">New</button>
-                        </div>
-        
-                    </div>
-        
-                </div>
-            
-                <div class="col-md-5 col-sm-12">
-                    <div class="aside mt-3 mx-4">
-                        <h5 class="aside-title fw-bold">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                        </h5>
-                        <div class="alert text-danger p-0 error-text" role="alert">
-                            <strong class="text-uppercase">Error!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, velit fuga. Vero hic consectetur aperiam consequuntur accusamus doloribus odio veniam.
-                            
-                        </div>
-
-                        <form>
-                            <div class="form-group mb-3">
-                                <label class="control-label fw-bold" for="name">Name:</label>
-                                <div class="">
-                                <input id="name" name="name" type="text" placeholder="Lorem ipsum dolor sit" class="form-control aside-form-style input-md" required="">
-                                </div>
-                            </div>
-
-                              <div class="form-group mb-3">
-                                <label class=" control-label fw-bold" for="company">Company:</label>
-                                <div class="">
-                                <input id="company" name="company" type="text" placeholder="Lorem ipsum dolor sit" class="form-control aside-form-style input-md" required="">
-                                </div> 
-                              </div>
-
-                              <div class="form-group mb-3">
-                                <div class="dropdown">
-                                  <p class="fw-bold mb-0">Adress:</p>
-                                  <a class="btn dropdown-toggle dropdown-adress" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Lorem ipsum dolor sit
-                                  </a>
-                                
-                                  <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
-                                    <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
-                                    <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit</a></li>
-                                  </ul>
-                                </div>  
-                              </div>
-
-                              <div class="form-group mb-3">
-                                <span class="control-label fw-bold red-min-symbol" for="date">Date: <span class="required fw-bold"></span></span>
-                                <div class="d-flex">
-                                  <input class="form-control aside-form-style fs-6 me-1" id="date" name="date" placeholder="04/09/2006" type="text"/>
-                                  <a href="#" class="page-link btn-date">
-                                    <img class="mb-1" src="assets/date-select.png" alt="date">
-                                  </a>
-                                </div>
-                              </div>
-
-                            <div class="mb-3 form-check checked-wrapper-comments">
-                              <input class="form-check-input chek-table" type="checkbox" value="" id="exampleCheck" checked>
-                              <label class="form-check-label fw-bold control-label" for="exampleCheck">Comments</label>
-                          </div>
-
-                            <div class="form-group mb-3">
-                              <label class="control-label fw-bold" for="exampleFormControlTextarea1">Notes:</label>
-                              <textarea class="form-control mb-2 notes-style" id="exampleFormControlTextarea1" rows="5"></textarea>
-                              
-
-                              <div class="position-relative">
-                                <div class=" col-lg-12 col-md-8">
-                                  <span class="text-secondary">Fields marked with <span class="required ms-1"></span></span><span class="text-secondary">are obligatory</span>
-                                </div>
-                                <button type="submit" class="btn btn-sm btn-green-width position-absolute top-2 end-0 btn-send">Send</button>
-                              </div>
-                            </div>
-                            
-                          </form>
-        
-                    </div>
-                </div>
-            </div>  
-        </main>
-    </div>
-
-
-        
-      
-<script src="dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+        </div>
+      </div>  
+    </main>
+  </div>    
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
