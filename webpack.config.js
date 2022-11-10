@@ -22,16 +22,7 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|gif|json|xml|ico|svg)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: 'assets/',
-                            publicPath: '/assets/'
-                        }
-                    }
-                ]
+                type: 'asset/resource',
             },
             {
                 test: /\.(sass|scss)$/,

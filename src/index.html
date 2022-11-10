@@ -21,8 +21,8 @@
           <button class="navbar-toggler navbar-toggler-style" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
             <span class="navbar-toggler-icon fs-6"></span>
           </button>
-          <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 ps-5 mb-lg-0 text-nowrap">
+          <div class="collapse navbar-collapse ps-5 ms-3" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 ps-5 mb-lg-0 text-nowrap navbar-content-show">
               <li class="nav-item dropdown">
                 <a class="nav-link px-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   User and file managment
@@ -35,13 +35,13 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-3 text-white text-decoration-underline" href="#">User and file managment</a>
+                <a class="nav-link px-4 text-white text-decoration-underline" href="#">User and file managment</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-3 text-white text-decoration-underline" href="#">File managment</a>
+                <a class="nav-link px-4 text-white text-decoration-underline" href="#">File managment</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-3 text-white text-decoration-underline" href="#">User managment</a>
+                <a class="nav-link px-4 text-white text-decoration-underline" href="#">User managment</a>
               </li> 
             </ul>
             <form class="d-flex" role="search">
@@ -64,7 +64,7 @@
 
               <div class="dropdown dropdown-content-wrapper mb-2">
                 <label class="fw-bold me-2 pt-1">Company:</label>
-                <button type="button" class="btn content-select">Lorem ipsum dolor sit</button>
+                <button type="button" class="btn content-select text-truncate">Lorem ipsum dolor sit</button>
                 <button type="button" class="btn btn-style dropdown-toggle dropdown-toggle-split" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Переключатель выпадающего списка</span>
                 </button>
@@ -77,7 +77,7 @@
 
               <div class="dropdown dropdown-content-wrapper mb-2">
                 <label class="fw-bold me-2 pt-1">Company:</label>
-                <button type="button" class="btn content-select">Lorem ipsum dolor sit</button>
+                <button type="button" class="btn content-select text-truncate">Lorem ipsum dolor sit</button>
                 <button type="button" class="btn btn-style dropdown-toggle dropdown-toggle-split" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Переключатель выпадающего списка</span>
                 </button>
@@ -90,7 +90,7 @@
 
               <div class="dropdown dropdown-content-wrapper">
                 <label class="fw-bold me-2 pt-1">Company:</label>
-                <button type="button" class="btn content-select">Lorem ipsum dolor sit</button>
+                <button type="button" class="btn content-select text-truncate">Lorem ipsum dolor sit</button>
                 <button type="button" class="btn btn-style dropdown-toggle dropdown-toggle-split" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Переключатель выпадающего списка</span>
                 </button>
@@ -103,23 +103,23 @@
 
             </div>
 
-            <div class="table-wrapper border-select">
+            <div class="table-wrapper table-responsive-sm border-select">
               <h5 class="table-title fw-bold">
                 Lorem ipsum dolor sit amet
               </h5>
-              <table class="table table-style table-hover table-bordered border-1">
+              <table class="table table-hover table-bordered border-1 table-style">
                 <thead class="text-white">
-                  <tr class="text-nowrap">
-                    <th scope="col" class="green-gradient-style align-middle"> 
+                  <tr class="text-nowrap position-relative">
+                    <th scope="col" class="green-gradient-style align-middle thead-shadow"> 
                       <div class="form-check checked-wrapper">
                           <input class="form-check-input chek-table" type="checkbox" value="" id="flexCheckChecked" checked>
                           <label class="control-label" for="flexCheckChecked"></label>
                       </div>
-                  </th>
-                  <th scope="col" class="green-gradient-style thead-shadow px-3">#</th>
-                  <th scope="col" class="green-gradient-style text-center">Lorem ipsum</th>
-                  <th scope="col" class="green-gradient-style">Lorem ipsum</th>
-                  <th scope="col" class="green-gradient-style">Ipsum</th>
+                    </th>
+                    <th scope="col" class="green-gradient-style thead-shadow px-3">#</th>
+                    <th scope="col" class="green-gradient-style text-center thead-shadow">Ipsum</th>
+                    <th scope="col" class="green-gradient-style thead-shadow">Lorem ipsum</th>
+                    <th scope="col" class="green-gradient-style thead-shadow">Ipsum</th>
                   </tr>
                 </thead>
                 <tbody class="align-middle">
@@ -208,7 +208,7 @@
                     </li>
                     <li class="page-item">
                       <a class="btn page-link pagination-button" href="#" role="button" aria-label="Previous">
-                        <img src="assets/icon-previous.png" width="10" height="10" class="pagination-img"  alt="previous">
+                        <img src="assets/icon-previous.png" width="10" height="10" class="pagination-img-s"  alt="previous">
                       </a>
                     </li>
                     <li class="page-item vert-line"><a class="page-link" href="#">1</a></li>
@@ -217,12 +217,12 @@
                     <li class="page-item vert-line"><a class="page-link" href="#">4</a></li>
                     <li class="page-item">
                       <a class="btn page-link pagination-button" href="#" role="button" aria-label="Next">
-                        <img src="assets/icon-next.png" width="10" height="10" class="pagination-img"  alt="next">
+                        <img src="assets/icon-next.png" width="10" height="10" class="pagination-img-e"  alt="next">
                       </a>
                     </li>
                     <li class="page-item">
                       <a class="btn page-link pagination-button rounded-0" href="#" role="button" aria-label="End">
-                        <img src="assets/icon-end.png" width="10" height="10" class="pagination-img"  alt="end">
+                        <img src="assets/icon-end.png" width="10" height="10" class="pagination-img "  alt="end">
                       </a>
                     </li>
                   </ul>
