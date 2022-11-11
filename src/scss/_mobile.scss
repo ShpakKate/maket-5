@@ -1,0 +1,58 @@
+@import "_variables";
+@import "_mixins";
+
+@media (min-width: 480px) and (max-width: 991px ) {
+
+    .navbar-collapse {
+        padding-left: 0 !important;
+    }
+
+    .navbar-collapse-show {
+        z-index: 1;
+        background-color: $light-green-border;
+        margin: 0 -12px;
+        height: auto;
+        text-align: center;
+
+        .nav-item {
+            width: max-content;
+            margin: 0 auto;
+        }  
+    }
+
+    .style-close {
+        display: none !important;
+    } 
+}
+
+@media (min-width: 320px) and (max-width: 479.9px ) {
+
+    .navbar-collapse {
+        padding-left: 0 !important;
+    }
+
+    .navbar-collapse-show {
+        z-index: 1;
+        background-color: $light-green-border;
+        margin: 0 -12px;
+        height: auto;
+        text-align: center;
+        padding-top: 0.5rem;
+
+        .nav-item {
+            width: max-content;
+            margin: 0 auto;
+        }
+    } 
+    
+    .style-close {
+        display: none !important;
+    } 
+}
+
+@media (max-width: 319px) {
+
+    .wrapper {
+        display: none;
+    }
+}

@@ -5,12 +5,17 @@
 }
 
 @mixin btn-width {
-    width: 5rem;
     border-radius: 3px;
-    box-shadow: 1px
+    padding: 0 1.5rem;
+    min-width: 6rem;
 }
 
 @mixin placeholdor-style {
     color: $text-color-placeholder;
     font-size: 0.9rem;
+}
+
+@mixin padding-margin-imporant {
+    margin: 0 !important;
+    padding: 0 !important;
 }

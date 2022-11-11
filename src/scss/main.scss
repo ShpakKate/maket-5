@@ -1,11 +1,11 @@
-
 @import "_variables";
 @import "_mixins";
+@import "_mobile";
 
 .wrapper {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, san-serif;
 }
 
 .header-wrapper {
@@ -27,24 +27,11 @@
 
 .navbar-toggler-style {
     margin: -0.5rem 0 0 auto;
-
-    &:focus:not(:focus-visible) {
-        box-shadow: none ;
-
-        .btn-close {
-            display: none;
-        }
-
-        .navbar-content-show {
-            text-align: center;
-            background-color: $green-shadow;
-            width: fit-content;
-        }
-    }
+    z-index: 2;
 }
 
-.dropdown-toggle::after {
-    content: none;
+.navbar-collapse {
+    padding-left: 13rem;
 }
 
 .nav-link {
@@ -78,6 +65,10 @@
 
 .dropdown-item {
     @include placeholdor-style;
+}
+
+.dropdown-toggle::after {
+    content: none;
 }
 
 .btn-close {
@@ -124,11 +115,7 @@
 .btn-style {
     background-image: url(../images/icon-select.png);
     height: 20px;
-    margin-left: -1.4rem;
-
-    &:active {
-        border-color: red;
-    }
+    margin-left: -1.2rem;
 }
 
 .table-wrapper {
@@ -244,7 +231,7 @@
     border: none;
 
     &:hover {
-        color: red;
+        color: #a12800;
         font-weight: bold;
         background-color: transparent;
     }
@@ -340,6 +327,10 @@
 }
 
 .dropdown-adress-wrapper {
+    
+    .btn-style {
+        top: 21px;
+    }
 
     .btn:active {
         border-color: $light-green-border;
