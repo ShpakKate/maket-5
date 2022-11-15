@@ -4,18 +4,20 @@
     line-height: 1;
 }
 
-@mixin btn-width {
-    border-radius: 3px;
-    padding: 0 1.5rem;
-    min-width: 6rem;
-}
-
 @mixin placeholdor-style {
     color: $text-color-placeholder;
-    font-size: 0.9rem;
+    font-size: 10px;
 }
 
 @mixin padding-margin-imporant {
     margin: 0 !important;
     padding: 0 !important;
+}
+
+@mixin button-size {
+    width: 79px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    font-size: 10px;
 }

@@ -1,11 +1,17 @@
+@import "_reset";
 @import "_variables";
 @import "_mixins";
 @import "_mobile";
 
+html {
+    font-family: system-ui !important;
+}
+
 .wrapper {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, san-serif;
+    font-family: system-ui !important;
+    font-size: 10px;
 }
 
 .header-wrapper {
@@ -21,7 +27,7 @@
 .navbar-wrapper {
     background: $light-green-border;
     border-top: 5px solid $green-normal;
-    font-size: smaller;
+    font-size: 10px;
     height: 2.6rem;
 }
 
@@ -98,7 +104,7 @@
         min-width: 40%;
         max-width: 50%;
         height: 20px;
-        line-height: 0.5;
+        line-height: 0.4;
         text-align: left;
         border-radius: 0;
         border: $gray-border 1px solid;
@@ -135,7 +141,7 @@
             border-right: 1px solid #fff;
             border-bottom: 1px solid #fff;
             border-left: none;
-
+            vertical-align: middle;
             background: $bg-gradient;
             color: #fff;
 
@@ -175,6 +181,7 @@
 }
 
 .checked-wrapper {
+    height: 1rem;
 
     .chek-table{
         display: none;
@@ -189,8 +196,7 @@
             &:after {
                 content: ' ';
                 display: block;
-    
-                left: 4px;
+                left: 12px;
                 position: absolute;
                 top: 11px;
                 width: 4px;
@@ -210,6 +216,7 @@
             content: ' ';
             position: relative;
             top: 9px;
+            left: 8px;
             width: .75rem;
             height: .75rem;
             min-width: .75rem;
@@ -229,6 +236,7 @@
 .page-link {
     color: $text-color;
     border: none;
+    font-size: 10px;
 
     &:hover {
         color: #a12800;
@@ -246,26 +254,12 @@
 }
 
 .pagination-button {
-    background: $green-width-button;
-    width: 0.6rem;
-    height: 1.3rem;
+    background-image: url(/src/images/green-button-bg.png);
     margin-right: 0.3rem;
     border-radius: 1px;
-    
-    .pagination-img {
-        vertical-align: top;
-        margin-left: -5px;
-    }
-    
-    .pagination-img-s {
-        vertical-align: top;
-        margin-left: -6px;
-    }
-    
-    .pagination-img-e {
-        vertical-align: top;
-        margin-left: -4px;
-    }
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
 }
 
 .vert-line {
@@ -287,9 +281,11 @@
 }
 
 .btn-green-width {
-    @include btn-width;
-    background: $green-width-button;
+    background-image: url(/src/images/green-button-big.png);
+    background-size: cover;
     color: #fff;
+    font-weight: bold;
+    @include button-size;
 
     &:hover, &:active, &:focus-visible {
         color: #fff !important; 
@@ -297,10 +293,11 @@
 }
 
 .btn-red-width {
-    @include btn-width;
-    background: $red-button;
+    background-image: url(/src/images/red-button-big.png);
+    background-size: cover;
     color: #fff;
     font-weight: bold;
+    @include button-size;
 
     &:hover, &:active, &:focus-visible {
         color: #fff !important; 
@@ -314,6 +311,7 @@
     .aside-form-style {
     @include form-border;
     border-color: $light-green-border;
+    padding-top: 0;
 
          &::placeholder {
             @include placeholdor-style;
@@ -329,7 +327,7 @@
 .dropdown-adress-wrapper {
     
     .btn-style {
-        top: 21px;
+        top: 13px;
     }
 
     .btn:active {
@@ -386,9 +384,8 @@
             &:after {
                 content: " ";
                 display: block;
-                left: 4.7rem;
+                left: 3.5rem;
                 position: absolute;
-                top: 5px;
                 width: 6px;
                 height: 8px;
                 border: solid #6cb834;
@@ -405,8 +402,7 @@
         &:before {
             content: " ";
             position: relative;
-            top: 4px;
-            left: 4.5rem;
+            left: 3.3rem;
             width: 0.8rem;
             height: 0.8rem;
             min-width: 0.75rem;
@@ -423,7 +419,9 @@
 .notes-style {
     border-color: $light-green-border;
     border-radius: 0; 
+    font-size: 10px;
 }
+
  .required {
     &::after {
         content: "*";

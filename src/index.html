@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
+    <style>:root {--bs-btn-font-family: system-ui;}
+    </style>
 </head>
 <body>
   <div class="wrapper lh-sm">
@@ -45,7 +47,7 @@
               </li> 
             </ul>
             <form class="px-3 ms-auto me-0 style-close" role="search">
-              <label class="text-white me-2 mt-1">Admin Admin</label>
+              <label class="text-white me-2 mt-1 align-top">Admin Admin</label>
               <button type="button" class="btn-close" aria-label="Закрыть">
                 <img class="mb-1" src="assets/close.png" alt="close" >
               </button>
@@ -107,7 +109,7 @@
             </div>
 
             <div class="table-wrapper table-responsive-sm border-select">
-              <h6 class="table-title fw-bold">
+              <h6 class="table-title fw-bold mb-2">
                 Lorem ipsum dolor sit amet
               </h6>
               <table class="table table-hover table-style ">
@@ -206,12 +208,12 @@
                   <ul class="pagination m-0">
                     <li class="page-item">
                       <a class="btn page-link pagination-button rounded-0" href="#" role="button" aria-label="Previous">
-                        <img src="assets/icon-start.png" width="10" height="10" class="pagination-img" alt="start">
+                        <img src="assets/icon-start.png" width="7" height="7" class="pagination-img" alt="start">
                       </a>
                     </li>
                     <li class="page-item">
                       <a class="btn page-link pagination-button" href="#" role="button" aria-label="Previous">
-                        <img src="assets/icon-previous.png" width="10" height="10" class="pagination-img-s"  alt="previous">
+                        <img src="assets/icon-previous.png" width="4" height="7" class="pagination-img-s"  alt="previous">
                       </a>
                     </li>
                     <li class="page-item vert-line"><a class="page-link" href="#">1</a></li>
@@ -220,12 +222,12 @@
                     <li class="page-item vert-line"><a class="page-link" href="#">4</a></li>
                     <li class="page-item">
                       <a class="btn page-link pagination-button" href="#" role="button" aria-label="Next">
-                        <img src="assets/icon-next.png" width="10" height="10" class="pagination-img-e"  alt="next">
+                        <img src="assets/icon-next.png" class="pagination-img-e"  alt="next">
                       </a>
                     </li>
                     <li class="page-item">
                       <a class="btn page-link pagination-button rounded-0" href="#" role="button" aria-label="End">
-                        <img src="assets/icon-end.png" width="10" height="10" class="pagination-img "  alt="end">
+                        <img src="assets/icon-end.png" class="pagination-img "  alt="end">
                       </a>
                     </li>
                   </ul>
@@ -233,8 +235,8 @@
             </div>
 
             <div class="d-flex gap-2 mt-2 me-5 justify-content-end">
-                <button class="btn btn-sm btn-table btn-red-width me-md-2" type="button">Delete</button>
-                <button class="btn btn-sm btn-table btn-green-width" type="button">New</button>
+                <button class="btn btn-table btn-red-width me-md-2" type="button">Delete</button>
+                <button class="btn btn-table btn-green-width" type="button">New</button>
             </div>
 
           </div>
@@ -251,21 +253,21 @@
 
             <form>
 
-              <div class="form-group mb-3">
+              <div class="form-group mb-2">
                 <label class="control-label fw-bold" for="name">Name:</label>
                 <div class="aside-form-info">
                   <input id="name" name="name" type="text" placeholder="Lorem ipsum dolor sit" class="form-control aside-form-style input-md" required="">
                 </div>
               </div>
 
-              <div class="form-group mb-3">
+              <div class="form-group mb-2">
                 <label class=" control-label fw-bold" for="company">Company:</label>
                 <div class="aside-form-info">
                   <input id="company" name="company" type="text" placeholder="Lorem ipsum dolor sit" class="form-control aside-form-style input-md" required="">
                 </div> 
               </div>
 
-              <div class="form-group mb-3">
+              <div class="form-group mb-2">
                 <div class="dropdown dropdown-adress-wrapper">
                   <p class="fw-bold mb-0">Adress:</p>
                   <button type="button" class="btn dropdown-toggle dropdown-adress position-relative">Lorem ipsum dolor sit
@@ -281,19 +283,19 @@
                 </div>  
               </div>
 
-              <div class="form-group mb-3">
+              <div class="form-group mb-2">
                 <span class="control-label fw-bold red-min-symbol" for="date">Date: <span class="required fw-bold"></span></span>
                 <div class="d-flex aside-form-info">
                   <input class="form-control aside-form-style fs-6 me-1" id="date" name="date" placeholder="04/09/2006" type="text"/>
                   <a href="#" class="page-link btn-date">
-                    <img class="mb-1" src="assets/date-select.png" alt="date">
+                    <img class="mt-1" src="assets/date-select.png" alt="date">
                   </a>
                 </div>
               </div>
 
-              <div class="mb-3 form-check checked-wrapper-comments">
+              <div class="form-check checked-wrapper-comments">
                 <input class="form-check-input chek-table" type="checkbox" value="" id="example-Check" checked>
-                <label class="form-check-label fw-bold control-label" for="exampl-Check">Comments</label>
+                <label class="form-check-label fw-bold control-label ms-2" for="exampl-Check">Comments</label>
               </div>
   
               <div class="form-group mb-3">
