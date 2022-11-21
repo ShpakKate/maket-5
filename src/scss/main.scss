@@ -66,6 +66,7 @@ html {
     
     .dropdown-menu-li-style:hover .dropdown-item {
         background-color: $green-toogle;
+        color: #fff
     }
 }
 
@@ -100,6 +101,10 @@ html {
 .content {
     background-color: $bg-content;
     
+    .dropdown-menu {
+        transform: translate(126.333px, 23.3333px) !important;
+    }
+    
     .content-select-button {
         min-width: 40%;
         max-width: 50%;
@@ -121,7 +126,6 @@ html {
 .btn-style {
     background-image: url(../images/icon-select.png);
     height: 20px;
-    margin-left: -1.2rem;
 }
 
 .table-wrapper {
@@ -157,6 +161,10 @@ html {
     .tbody-style {
         .tr-style {
             border: 1px solid $light-green-border;
+            
+            &:hover {
+                background-color: $green-bg-hover-tr;
+            }
 
             &:first-child {
                 .td-style, .th-style {
@@ -183,11 +191,11 @@ html {
 .checked-wrapper {
     height: 1rem;
 
-    .chek-table{
+    .check-table{
         display: none;
     }
     
-    .chek-table:checked  {
+    .check-table:checked  {
         + .control-label {
             &:before {
                 background-color: #ffffff;
@@ -196,7 +204,7 @@ html {
             &:after {
                 content: ' ';
                 display: block;
-                left: 12px;
+                left: 11px;
                 position: absolute;
                 top: 11px;
                 width: 4px;
@@ -231,6 +239,22 @@ html {
 
 .green-gradient-style {
     background: $bg-gradient;
+    padding: 0 0.5rem !important;
+    max-width: 1.6rem !important;
+}
+
+.sorting-down::after {
+    content: " ";
+    background: url(../images/sorting-down.png);
+    @include sorting;
+    right: 6rem;
+}
+
+.sorting-up::after {
+    content: " ";
+    background: url(../images/sorting-up.png);
+    @include sorting;
+    right: 1rem;
 }
 
 .page-link {
@@ -305,6 +329,13 @@ html {
 }
 
 /*aside*/
+.error-text-style {
+    letter-spacing: -1px;
+
+    .error-style {
+        letter-spacing: 0;
+    }
+}
 
 .aside-form-info {
     
@@ -324,18 +355,18 @@ html {
     box-shadow: none;
 }
 
-.dropdown-adress-wrapper {
+.dropdown-address-wrapper {
     
     .btn-style {
-        top: 13px;
+        top: 12px;
+        right: 0px;
     }
 
     .btn:active {
         border-color: $light-green-border;
     }
-    .dropdown-adress {
-        border: 1px solid;
-        border-color: $light-green-border;
+    .dropdown-address {
+        border: 1px solid $light-green-border;
         width: 100%;
         @include form-border;
         text-align: left;
@@ -356,7 +387,7 @@ html {
 
     &::after {
         content: " ";
-        background-image: url('/src/images/logo.png') no-repeat;
+        background: url('/src/images/logo.png') no-repeat;
         position: absolute;
         width: 5px;
         height: 5px;
@@ -371,11 +402,11 @@ html {
 
 .checked-wrapper-comments {
 
-    .chek-table{
+    .check-table{
         display: none;
     }
     
-    .chek-table:checked  {
+    .check-table:checked  {
         + .control-label {
             &:before {
                 background-color: #fafaf9;

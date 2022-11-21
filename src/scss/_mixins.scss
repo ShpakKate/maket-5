@@ -21,3 +21,10 @@
     border: none;
     font-size: 10px;
 }
+
+@mixin sorting {
+    width: 7px;
+    height: 4px;
+    position: absolute;
+    top: 0.55rem;
+}
