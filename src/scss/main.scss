@@ -122,10 +122,15 @@ html {
         }   
     } 
 }
- 
-.btn-style {
-    background-image: url(../images/icon-select.png);
-    height: 20px;
+
+.dropdown-content-wrapper {
+    .btn-style {
+        background-image: url(../images/icon-select.png);
+        height: 20px;
+        position: absolute;
+        left: 16.55rem;
+        top: 0.1rem;
+    }
 }
 
 .table-wrapper {
@@ -182,6 +187,25 @@ html {
             }
         }
     }
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: 8px;
+    position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+	content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+	content: "▲"
 }
 
 .form-check {
@@ -359,7 +383,7 @@ html {
     
     .btn-style {
         top: 12px;
-        right: 0px;
+        right: -1px;
     }
 
     .btn:active {
