@@ -189,25 +189,6 @@ html {
     }
 }
 
-th.sorted[data-order="1"],
-th.sorted[data-order="-1"] {
-    position: relative;
-}
-
-th.sorted[data-order="1"]::after,
-th.sorted[data-order="-1"]::after {
-    right: 8px;
-    position: absolute;
-}
-
-th.sorted[data-order="-1"]::after {
-	content: "▼"
-}
-
-th.sorted[data-order="1"]::after {
-	content: "▲"
-}
-
 .form-check {
     margin-left: -0.95rem;
 }
@@ -267,14 +248,14 @@ th.sorted[data-order="1"]::after {
     max-width: 1.6rem !important;
 }
 
-.sorting-down::after {
+.sort-desk::after {
     content: " ";
     background: url(../images/sorting-down.png);
     @include sorting;
     right: 6rem;
 }
 
-.sorting-up::after {
+.sort-ask::after {
     content: " ";
     background: url(../images/sorting-up.png);
     @include sorting;
