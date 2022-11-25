@@ -106,8 +106,7 @@ html {
     }
     
     .content-select-button {
-        min-width: 40%;
-        max-width: 50%;
+        width: 17rem;
         height: 20px;
         line-height: 0.4;
         text-align: left;
@@ -128,8 +127,8 @@ html {
         background-image: url(../images/icon-select.png);
         height: 20px;
         position: absolute;
-        left: 16.55rem;
         top: 0.1rem;
+        left: 19.45rem;
     }
 }
 
@@ -180,6 +179,7 @@ html {
             .td-style, .th-style {
                 border-right: 1px solid $light-green-border;
                 border-bottom: 1px solid $light-green-border;
+                vertical-align: middle;
 
                 &:first-child {
                     border-left: 1px solid $light-green-border;
@@ -209,7 +209,7 @@ html {
             &:after {
                 content: ' ';
                 display: block;
-                left: 11px;
+                left: 12px;
                 position: absolute;
                 top: 11px;
                 width: 4px;
@@ -244,18 +244,19 @@ html {
 
 .green-gradient-style {
     background: $bg-gradient;
-    padding: 0 0.5rem !important;
-    max-width: 1.6rem !important;
+    margin: 0 auto;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
-.sort-desk::after {
+.sort-desc::after {
     content: " ";
     background: url(../images/sorting-down.png);
     @include sorting;
     right: 6rem;
 }
 
-.sort-ask::after {
+.sort-asc::after {
     content: " ";
     background: url(../images/sorting-up.png);
     @include sorting;
